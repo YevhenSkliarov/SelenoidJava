@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.TestGoogleSearch1" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-09-10T10:30:32" hostname="DESKTOP-A9VLQL2" time="13.381">
+  <properties/>
+  <testcase name="shouldBeBlogTitle3" classname="tests.TestGoogleSearch1" time="10.309"/>
+  <testcase name="shouldBeBlogTitle4" classname="tests.TestGoogleSearch1" time="12.932"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[вер. 10, 2020 1:30:26 ПП org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+вер. 10, 2020 1:30:33 ПП org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

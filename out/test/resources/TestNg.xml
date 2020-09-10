@@ -1,0 +1,24 @@
+<suite thread-count="2" name="Suite" parallel="tests" >
+    <test name="java.tests.FirstTest" parallel="methods" thread-count="5">
+        <parameter name="browserName" value="chrome" />
+        <classes>
+            <class name="tests.TestGoogleSearch">
+                <methods>
+                    <include name="shouldBeBlogTitle" />
+                    <include name="shouldBeBlogTitle1" />
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- First Test -->
+    <test name="SecondTest" parallel="methods" thread-count="5">
+        <parameter name="browserName" value="firefox" />
+        <classes>
+            <class name="tests.TestGoogleSearch1">
+                <methods>
+                    <include name="shouldBeBlogTitle3" />
+                    <include name="shouldBeBlogTitle4" />
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Second Test -->
+</suite> <!-- Suite -->
