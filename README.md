@@ -22,3 +22,9 @@ to open Selenoid-ui just set http://127.0.0.1:8080/ in your browser , if everyth
 to get capabilities for your tests go to capabilities tab, select your language and browser version and than paste to your WebDriver factory
 
 to check selenoid version just set http://127.0.0.1:4444/wd/hub/ in your browser
+
+Open Grandle panel in Idea => Tasks => build => run clean task
+
+Open Grandle panel in Idea => Tasks => verification => run test task
+
+*4444 port must be free. To check status of the part perform netstat -a command in cmd
