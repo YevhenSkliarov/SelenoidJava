@@ -1,13 +1,24 @@
-# SeleniumGridWithCommonClass
-SeleniumGridWithCommonClass
+# Selenoid + Java
+SelenoidJava
 Clone project 
 
 open project and install dependencies
 
-<b>Open chrome bat(located in GridStart folder) in notepad++ and check that path to chrome driver is correct. Chromedriver is located GridStart folder</b>
+<b>Download and install Docker https://docs.docker.com/docker-for-windows/install/</b>
+<b> Download and install Selenoid Configuration Manager https://aerokube.com/cm/latest/</b>
 
-open GridStart folder and run start.bat (Check that nodes successfully registered at the hub)
+perform './cm selenoid start --vnc' command in powershell(Selenoid install all dependencies and browsers images
 
-Open Grandle panel in Idea => Tasks => build => run clean task
+perform './cm selenoid-ui start' command in powershell to start selenoid-ui
 
-Open Grandle panel in Idea => Tasks => verification => run test task
+open http://127.0.0.1:4444/status in browser (you will see something like this {"total":5,"used":0,"queued":0,"pending":0,"browsers":{"chrome":{"84.0":{},"85.0":{}},"firefox":{"79.0":{},"80.0":{}},"opera":{"69.0":{},"70.0":{}}}})
+
+to check log perform command 'docker logs selenoid'
+
+to check selenoid status perform 'docker ps' command ( there must be at least selenoid and selenoid-ui with statuses UP)
+
+to open Selenoid-ui just set http://127.0.0.1:8080/ in your browser , if everything ok you can see connected statuses
+
+to get capabilities for your tests go to capabilities tab, select your language and browser version and than paste to your WebDriver factory
+
+to check selenoid version just set http://127.0.0.1:4444/wd/hub/ in your browser
