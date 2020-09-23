@@ -29,4 +29,5 @@ Open Grandle panel in Idea => Tasks => verification => run test task
 
 To check supported browser versions just open browser.json in aerokube folder
 
-*4444 port must be free. To check status of the part perform netstat -a command in cmd
+*<b>4444 port must be free. To check status of the part perform netstat -a command in cmd<b>
+  https://www.automatetheplanet.com/execute-webdriver-tests-docker-selenoid/
