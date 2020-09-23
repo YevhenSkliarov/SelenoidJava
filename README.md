@@ -29,9 +29,11 @@ Open Grandle panel in Idea => Tasks => verification => run test task
 
 To check supported browser versions just open browser.json in aerokube folder
 To add new browser:
-Update browser.json file and
-Pull browser Docker image:
-for example $ docker pull selenoid/vnc:firefox_57.0.
+Update browser.json file andPull browser Docker image:
+
+for example $ docker pull selenoid/vnc:firefox_57.0. than restart selenoid docker kill -s HUP selenoid
+
+To get last 5 versions of browser execute ./cm selenoid update --last-versions 5
 
 *<b>4444 port must be free. To check status of the part perform netstat -a command in cmd<b>
   https://www.automatetheplanet.com/execute-webdriver-tests-docker-selenoid/
