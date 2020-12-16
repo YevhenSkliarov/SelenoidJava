@@ -1,4 +1,4 @@
-# SeleniumGridWithCommonClass
+# Selenoid Java
 SeleniumGridWithCommonClass
 Clone project 
 
