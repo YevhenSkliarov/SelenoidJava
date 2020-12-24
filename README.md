@@ -17,7 +17,7 @@ to check log perform command 'docker logs selenoid'
 
 to check selenoid status perform 'docker ps' command ( there must be at least selenoid and selenoid-ui with statuses UP)
 
-to open Selenoid-ui just set http://127.0.0.1:8080/ in your browser , if everything ok you can see connected statuses
+to open Selenoid-ui just set http://127.0.0.1:8080/(http://localhost:8080/) in your browser , if everything ok you can see connected statuses
 
 to get capabilities for your tests go to capabilities tab, select your language and browser version and than paste to your WebDriver factory
 
@@ -29,7 +29,7 @@ Open Grandle panel in Idea => Tasks => verification => run test task
 
 To check supported browser versions just open browser.json in aerokube folder
 To add new browser:
-Update browser.json file andPull browser Docker image:
+Update browser.json file and Pull browser Docker image:
 
 for example $ docker pull selenoid/vnc:firefox_57.0. than restart selenoid docker kill -s HUP selenoid
 
